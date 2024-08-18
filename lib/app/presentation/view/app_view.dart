@@ -1,5 +1,22 @@
 part of 'view.dart';
 
+class App extends StatelessWidget {
+  const App({
+    super.key,
+    this.deviceToken = '',
+  });
+
+  final String deviceToken;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () => context.unfocus(),
+      child: AppCoreProviders(deviceToken: deviceToken),
+    );
+  }
+}
+
 class AppView extends StatelessWidget {
   const AppView({super.key});
 
