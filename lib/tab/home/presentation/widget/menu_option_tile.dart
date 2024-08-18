@@ -2,7 +2,8 @@ import 'package:common/common.dart';
 import 'package:flutter/material.dart';
 
 class MenuOptionTile extends StatelessWidget {
-  const MenuOptionTile({super.key, 
+  const MenuOptionTile({
+    super.key,
     required this.title,
     required this.icon,
     this.onTap,
