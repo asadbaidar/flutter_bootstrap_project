@@ -1,27 +1,26 @@
 part of 'page.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class BoardView extends StatelessWidget {
+  const BoardView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: CustomAppBar(
         customTitle: TitleView(),
-        actions: [HomeMenu()],
       ),
-      body: _HomeBody(),
+      body: _BoardBody(),
     );
   }
 }
 
-class _HomeBody extends StatelessWidget {
-  const _HomeBody();
+class _BoardBody extends StatelessWidget {
+  const _BoardBody();
 
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text(LocaleStrings.home),
+      child: Text(LocaleStrings.board),
     );
   }
 }
